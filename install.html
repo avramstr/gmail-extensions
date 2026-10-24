@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>מדריך התקנה</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>מדריך התקנה</h1>
+  <p>כ-2 דקות לכל תוסף. אותם שלבים לשני התוספים.</p>
+  <nav><a class="btn outline" href="index.html">חזרה לתוספים</a></nav>
+</header>
+
+<section>
+  <h2>התקנה</h2>
+  <ol class="steps">
+    <li><strong>הורדה:</strong> בדף הראשי לוחצים "הורדה" ליד התוסף הרצוי. יורד קובץ ZIP.</li>
+    <li><strong>חילוץ:</strong> לחצן ימני על הקובץ ← "חלץ הכל", ושומרים בתיקייה קבועה. לא למחוק את התיקייה אחר כך – Chrome טוען ממנה את התוסף.</li>
+    <li><strong>דף התוספים:</strong> בשורת הכתובת של Chrome מקלידים <code>chrome://extensions</code> ולוחצים Enter.</li>
+    <li><strong>מצב מפתח:</strong> מפעילים את המתג <strong>Developer mode</strong> בפינה העליונה של הדף.</li>
+    <li><strong>טעינה:</strong> לוחצים <strong>Load unpacked</strong> ובוחרים את התיקייה שחולצה – זו שבתוכה נמצא <code>manifest.json</code>.</li>
+    <li><strong>רענון Gmail:</strong> חוזרים ל-Gmail ולוחצים F5.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>שימוש</h2>
+  <h3>סינון מתקדם</h3>
+  <ol class="steps">
+    <li>בפינה התחתונה של Gmail מופיע כפתור עם אייקון סינון.</li>
+    <li>מסמנים את מה שרוצים – אפשר כמה אפשרויות בכל קבוצה.</li>
+    <li>לוחצים <strong>סנן</strong>. כדי לשמור את הבחירה, כותבים שם בתחתית החלונית ולוחצים <strong>שמור</strong>.</li>
+  </ol>
+  <h3>הקלטה מצורפת</h3>
+  <ol class="steps">
+    <li>פותחים <strong>כתיבה</strong> או "השב". ליד "שליחה" מופיע כפתור <strong>🎤 הקלטה</strong>.</li>
+    <li>בפעם הראשונה מאשרים ל-Chrome גישה למיקרופון.</li>
+    <li>מדברים, ולוחצים שוב כדי לעצור. קובץ MP3 מצטרף לאימייל.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>משהו לא עובד?</h2>
+  <details><summary>הכפתור לא מופיע ב-Gmail</summary><p>ב-<code>chrome://extensions</code> לוחצים ⟳ בכרטיס התוסף ומרעננים את Gmail. אם יש בכרטיס כפתור אדום "שגיאות", לוחצים עליו כדי לראות מה קרה.</p></details>
+  <details><summary>"Load unpacked" לא מופיע</summary><p>צריך להפעיל קודם את המתג Developer mode.</p></details>
+  <details><summary>"Manifest file is missing"</summary><p>נבחרה תיקייה שגויה. בוחרים את התיקייה שבתוכה נמצא הקובץ <code>manifest.json</code>.</p></details>
+  <details><summary>אין גישה למיקרופון</summary><p>לוחצים על סמל המנעול ליד הכתובת של Gmail ← מיקרופון ← אפשר. בודקים גם שהמיקרופון מחובר ומוגדר ב-Windows.</p></details>
+</section>
+</div>
+<footer><a href="index.html">תוספי Gmail</a></footer>
+</body>
+</html>
